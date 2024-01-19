@@ -36,6 +36,13 @@ const UserForm: React.FC<Props> = ({ onSubmit }) => {
             id: Math.random().toString(),
             ...formData,
         });
+
+        setFormData({
+            name: '',
+            email: '',
+            activity: false,
+            role: 'User',
+        });
     };
 
     return (
